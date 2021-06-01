@@ -13,7 +13,7 @@ public class TestMessageController {
 		@Test
 		public void testMessage() {
 			MessageController ms = new MessageController();
-			Assertions.assertEquals(ms.sayHello(), "hello from bootcamp");
+			Assertions.assertEquals(ms.sayHello(), "hello from bootcamp e");
 		}
 		
 		@Test
