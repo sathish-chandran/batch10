@@ -20,4 +20,4 @@
   - name: Pull Docker Image from DockerHub
     command: docker pull sathishchandran/devops-spboot:1.0
   - name: Run Docker Application
-    command: docker run -it -d 8888:8888 sathishchandran/devops-spboot:1.0
+    command: docker run -it -d -p 8888:8888 sathishchandran/devops-spboot:1.0
