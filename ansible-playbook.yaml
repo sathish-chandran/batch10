@@ -1,0 +1,23 @@
+---
+- name: Install Spring Boot Docker Application
+  hosts: all
+  become: true
+  tasks:
+  - name: Update cache
+    apt:
+      update_cache: yes
+  - name: Install Java, Docker
+    apt:
+      name: 
+        - openjdk-8-jdk
+        - docker.io
+      state: present
+  - name: Start Docker Service
+    service:
+      name: docker
+      state: started
+      enabled: true
+  - name: Pull Docker Image from DockerHub
+    command: docker pull sathishchandran/test-nginx:1.0
+  - name: Run Docker Application
+    command: docker run -it -d 8888:8888 sathishchandran/test-nginx:1.0
