@@ -11,7 +11,7 @@
 ## green.example.com
 ## blue.example.com
 ## 192.168.100.1
-10.128.0.10
+10.128.0.11
 # Ex 2: A collection of hosts belonging to the 'webservers' group
 ## [webservers]
 ## alpha.example.org
